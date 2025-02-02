@@ -17,7 +17,7 @@ Get Ephemeral Drop Event ID: Retrieve the event ID associated with a given ephem
 
 Here's an example call using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the drop ID

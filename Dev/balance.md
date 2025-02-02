@@ -18,7 +18,7 @@ Retrieves the balance of an account.
 
 To call this method using Motoko language:
 
-```motoko
+```Javascript
 import OroTypes "OroTypes";
 
 

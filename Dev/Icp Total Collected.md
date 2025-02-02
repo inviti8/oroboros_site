@@ -14,7 +14,7 @@ Retrieve the total amount of ICP tokens collected by the network.
 
 ## Example Call
 
-```motoko
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the total icp held

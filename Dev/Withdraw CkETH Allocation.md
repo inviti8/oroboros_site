@@ -16,7 +16,7 @@ Withdraw Generator Allocated CkETH Tokens. The Generators holding period must be
 
 Here's an example call using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 const principal = Principal.fromText("principal_id");

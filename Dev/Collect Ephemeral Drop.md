@@ -16,7 +16,7 @@ Collects an ephemeral drop by verifying that it exists, if its date is in the pa
 
 Here's an example call using Dfinity Motoko language:
 
-```
+```Javascript
 func collectEphemeralDropExample() {
   let mark = "my_unique_drop";
   let result = await collectEphemeralDrop(mark);

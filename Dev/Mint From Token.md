@@ -22,7 +22,7 @@ This method mints new tokens from the caller's account. It first checks if the t
 
 To construct a call to this method using Dfinity Motoko language:
 
-```Motoko
+```Javascript
 import OroTypes "OroTypes";
 
 public shared ({ caller }) func sampleMintMethod() : async ICRC1.TransferResult {

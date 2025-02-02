@@ -15,7 +15,7 @@ Join an existing ephemeral drop.
 
 Here's an example call using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 

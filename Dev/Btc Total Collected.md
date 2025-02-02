@@ -14,7 +14,7 @@ Retrieve the total amount of CkBtc tokens collected by the network.
 
 ## Example Call
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the total CkBtc held

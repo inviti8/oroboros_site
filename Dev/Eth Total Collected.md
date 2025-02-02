@@ -14,7 +14,7 @@ Retrieve the total amount of CkEth tokens collected by the network.
 
 ## Example Call
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the total CkEth held

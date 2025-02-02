@@ -19,7 +19,7 @@ Create a drop event with specified parameters.
 
 In Motoko, you can construct a call to this method using the following code:
 
-```mo
+```Javascript
 import OroTypes "OroTypes";
 
 let response = await OroTypes.createEphemeralDropEvent(

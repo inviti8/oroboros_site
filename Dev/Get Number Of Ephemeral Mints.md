@@ -18,7 +18,7 @@ None. This method does not take any parameters.
 
 In Dfinity Motoko, you can construct a call to this method as follows:
 
-```motoko
+```Javascript
 import OroTypes "OroTypes";
 
 let ephemeralMints Nat = await OroTypes.getNumberOfEphemeralMints();

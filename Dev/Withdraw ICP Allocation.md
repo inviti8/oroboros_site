@@ -16,7 +16,7 @@ Withdraw Generator Allocated ICP Tokens. The Generators holding period must be c
 
 Here's an example call using Dfinity Motoko language:
 
-```Motoko
+```Javascript
 import OroTypes "OroTypes";
 
 const principal = Principal.fromText("principal_id");

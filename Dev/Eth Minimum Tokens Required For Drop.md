@@ -16,7 +16,7 @@ Retrieve the minimum CkEth tokens required for a drop.
 
 To construct a call to this method using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the minimum CkEth required to create an ephemeral drop.

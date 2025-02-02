@@ -16,7 +16,7 @@ Creates a unique sub-namespace (moniker) that exists under the specified mark.
 
 Here's an example call using Dfinity Motoko language:
 
-```motoko
+```Javascript
 import OroTypes "OroTypes";
 
 

@@ -18,7 +18,7 @@ None
 
 You can construct a call to this method using Motoko like this:
 
-```mo
+```Javascript
 //ADD EXAMPLE!!
 ```
 

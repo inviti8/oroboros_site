@@ -16,7 +16,7 @@ Retrieve the minimum CkBtctokens required for a drop.
 
 To construct a call to this method using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the minimum CkBtc required to create an ephemeral drop.

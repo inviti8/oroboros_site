@@ -9,7 +9,7 @@ export default defineConfig({
     logo: '../../_resources/oro_logo.svg',
     nav: [
       { text: '⛩ Home', link: '/' },
-      { text: 'What is Oroboros?', link: 'What is Oroboros/The Oroboros' }
+      { text: 'What is Oroboros?', link: '/What is Oroboros/The Oroboros' }
     ],
 
     sidebar: [
@@ -17,7 +17,8 @@ export default defineConfig({
         text: '📖 About',
         collapsed: false,
         items: [
-          { text: '🐍 What is Oroboros?', link: 'What is Oroboros/The Oroboros' },
+          { text: '🐍 What is Oroboros?', link: '/What is Oroboros/The Oroboros' },
+          { text: 'Specs', link: '/Tokenomics/Token Specs' },
           { 
             text: '🗺 Overview',
             collapsed: false,
@@ -56,8 +57,8 @@ export default defineConfig({
                       collapsed: true,
                       items:[
                         { text: 'ICP Exchange Rate', link: '/Dev/Get Icp Exchange Rate' },
-                        { text: 'ETH Exchange Rate', link: '/Dev/Get Eth  Exchange Rate' },
-                        { text: 'BTC Exchange Rate', link: '/Dev/Get Btc  Exchange Rate' },
+                        { text: 'ETH Exchange Rate', link: '/Dev/Get Eth Exchange Rate' },
+                        { text: 'BTC Exchange Rate', link: '/Dev/Get Btc Exchange Rate' },
                       ]
                     },
                     {
@@ -65,11 +66,11 @@ export default defineConfig({
                       collapsed: true,
                       items:[
                         { text: 'Total Generator Minted Balance', link: '/Dev/Total Generator Minted Balance' },
-                        { text: 'ICP Total Collected', link: '/Dev/Get Icp Total Collected' },
+                        { text: 'ICP Total Collected', link: '/Dev/Icp Total Collected' },
                         { text: 'ICP Network Take', link: '/Dev/Total ICP Network Take' },
-                        { text: 'ETH Total Collected', link: '/Dev/Get Eth Total Collected' },
+                        { text: 'ETH Total Collected', link: '/Dev/Eth Total Collected' },
                         { text: 'ETH Network Take', link: '/Dev/Total ETH Network Take' },
-                        { text: 'BTC Total Collected', link: '/Dev/Get Btc Total Collected' },
+                        { text: 'BTC Total Collected', link: '/Dev/Btc Total Collected' },
                         { text: 'BTC Network Take', link: '/Dev/Total BTC Network Take' },
                       ]
                     },

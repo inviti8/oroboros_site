@@ -17,7 +17,7 @@ Check if Account is in Generation.
 
 Here's an example call using Dfinity Motoko language:
 
-```Motoko
+```Javascript
 import OroTypes "OroTypes";
 
 public shared func inMyGeneration(args : ICRC1.Account) : bool {

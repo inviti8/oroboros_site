@@ -18,7 +18,7 @@ This method retrieves and returns the current CkBtc exchange rate, expressed as 
 
 To construct a call to this method using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the CkBtc to oro exchange rate as a float

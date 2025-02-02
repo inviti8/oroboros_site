@@ -18,7 +18,7 @@ This method retrieves and returns the current CkEth exchange rate, expressed as 
 
 To construct a call to this method using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the CkEth to oro exchange rate as a float

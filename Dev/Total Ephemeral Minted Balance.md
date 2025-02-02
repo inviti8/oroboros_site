@@ -12,9 +12,9 @@ Retrieves the total ephemeral minted balance.
 
 &nbsp;
 
-### Example Call 
+### Example Call
 
-```motoko
+```Javascript
 //ADD EXAMPLE!!
 ```
 

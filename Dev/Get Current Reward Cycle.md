@@ -16,7 +16,7 @@
 
 ## Example Call
 
-```mo
+```Javascript
 import OroTypes "OroTypes";
 
 let rewardCycle: Nat = await OroTypes.getCurrentRewardCycle();

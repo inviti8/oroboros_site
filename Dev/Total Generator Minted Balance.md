@@ -16,7 +16,7 @@ This method retrieves and returns the total generator minted balance, expressed 
 
 ## Example Call
 
-```motoko
+```Javascript
 //ADD EXAMPLE!!
 ```
 

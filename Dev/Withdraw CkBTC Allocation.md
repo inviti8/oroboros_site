@@ -16,7 +16,7 @@ Withdraw Generator Allocated CkBTC Tokens. The Generators holding period must be
 
 Here's an example call using Dfinity Motoko language:
 
-```Motoko
+```Javascript
 import OroTypes "OroTypes";
 
 const principal = Principal.fromText("principal_id");

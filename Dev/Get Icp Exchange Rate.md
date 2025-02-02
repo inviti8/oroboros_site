@@ -18,7 +18,7 @@ This method retrieves and returns the current ICP exchange rate, expressed as a 
 
 To construct a call to this method using Dfinity Motoko language:
 
-```Motoko
+```Javascript
 import OroTypes "OroTypes";
 
 //Get the icp to oro exchange rate as a float

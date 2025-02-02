@@ -14,7 +14,7 @@
 
 Here's an example call using Dfinity Motoko language:
 
-```Motoko
+```Javascript
 import OroTypes "OroTypes";
 
 //grab the image

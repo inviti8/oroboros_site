@@ -16,7 +16,7 @@ Check if account is a generator.
 
 Here's how you can construct a call for this method using Dfinity Motoko language:
 
-```motoko
+```Javascript
 import OroTypes "OroTypes";
 
 

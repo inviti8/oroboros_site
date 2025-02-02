@@ -17,7 +17,7 @@ Retrieves the coin allocation by mark for a given account.
 
 You can call this method using the Dfinity Motoko language as follows:
 
-```motoko
+```Javascript
 //EXAMPLE HERE
 ```
 

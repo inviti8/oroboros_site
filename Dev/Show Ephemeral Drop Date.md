@@ -17,7 +17,7 @@ Show Ephemeral Drop Date: Shows the date associated with a given ephemeral drop 
 
 Here's an example call using Dfinity Motoko language:
 
-```
+```Javascript
   let args = ICRC1.Account("owner", "account");
   let mark = "my_mark";
 

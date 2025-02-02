@@ -15,7 +15,7 @@ Retrieves the coin allocation type (ICP, ETH, BTC) by mark for a given account.
 
 ### Example Call
 
-```motoko
+```Javascript
 //ADD EXAMPLE!!!
 ```
 

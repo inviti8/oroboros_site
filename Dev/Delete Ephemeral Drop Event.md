@@ -17,7 +17,7 @@ Delete a specific ephemeral drop event.
 
 Here's an example call using Dfinity Motoko language:
 
-```
+```Javascript
 import OroTypes "OroTypes";
 
 let myAccount = ...

@@ -16,7 +16,7 @@ Retrieve the total number generators on the network.
 
 ## Example Call
 
-```motoko
+```Javascript
 import OroTypes "OroTypes";
 
 //get the total number of generators

@@ -17,7 +17,7 @@ Update the logo URL for a given Mark. Hook for generators to update their existi
 
 Here's an example call using Dfinity Motoko language:
 
-```mo
+```Javascript
 import OroTypes "OroTypes";
 
 func testUpdateGeneratorLogo() {

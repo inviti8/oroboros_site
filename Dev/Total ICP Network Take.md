@@ -14,6 +14,6 @@ None.
 
 ## Example Call
 
-```mo
+```Javascript
 //ADD EXAMPLE!!
 ```

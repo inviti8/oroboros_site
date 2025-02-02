@@ -17,7 +17,7 @@ Check if an ephemeral drop is ready.
 
 Here's an example call using Dfinity Motoko language:
 
-```
+```Javascript
 import ICRC1
 import OroTypes "OroTypes";
 
