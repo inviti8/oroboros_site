@@ -1,21 +1,21 @@
 /* .vitepress/theme/custom.css */
 :root {
-    --vp-c-brand-1: #ffffff;
-    --vp-c-brand-2: #ffffff;
+    --vp-c-brand-1: #9565a3;
+    --vp-c-brand-2: #9565a3;
     --vp-c-brand-3: #31b09c;
   
     --vp-c-border: #c2c2c4;
     --vp-c-divider: #31b09c;
     --vp-c-gutter: #31b09c;
   
-    --vp-c-bg: #afe8c5;
+    --vp-c-bg: #ffe49b;
     --vp-c-bg-alt: #cfb9bf;
     --vp-c-bg-elv: #cfb9bf;
     --vp-c-bg-soft: #cfb9bf;
   
-    --vp-c-text-1: rgba(60, 60, 67);
-    --vp-c-text-2: rgba(60, 60, 67, 0.78);
-    --vp-c-text-3: rgba(60, 60, 67, 0.56);
+    --vp-c-text-1: rgba(112, 81, 104, 0.904);
+    --vp-c-text-2: rgba(117, 71, 106, 0.8);
+    --vp-c-text-3: rgba(88, 67, 2, 0.38);
   }
   
   .dark {
@@ -28,7 +28,7 @@
     --vp-c-gutter: #221901;
     
     --vp-c-bg: #110c01;
-    --vp-c-bg-alt: #110c01;
+    --vp-c-bg-alt: #22120d;
     --vp-c-bg-elv: #241323;
     --vp-c-bg-soft: #241323;
   
