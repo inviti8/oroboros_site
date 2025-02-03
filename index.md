@@ -22,13 +22,13 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
 <script setup>
 import { ref } from 'vue'
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const count = ref(0)
 const clock = new THREE.Clock();
 let camera, scene, renderer;
 
@@ -44,11 +44,11 @@ function init() {
 	camera.position.set( - 1.8, 0.6, 2.7 );
 
 	scene = new THREE.Scene();
-    const light = new THREE.AmbientLight( 0x404040 ); // soft white light
-    scene.add( light );
+  const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+  scene.add( light );
 
 	const loader = new GLTFLoader().setPath( '/' );
-	    loader.load( 'bg_model.glb', async function ( gltf ) {
+	loader.load( 'bg_model.glb', async function ( gltf ) {
 
 		const model = gltf.scene;
 
