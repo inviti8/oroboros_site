@@ -31,37 +31,56 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const clock = new THREE.Clock();
 let camera, scene, renderer;
+let mixer = undefined;
+let modelReady = false
 
 init();
 
 function init() {
-  const hero = document.getElementsByClassName('VPHero VPHomeHero');
+
+	const material = new THREE.MeshMatcapMaterial();
+	const matcapTexture = new THREE.TextureLoader().load('/matcap_logo.png');
+	material.matcap = matcapTexture;
+	material.color.setHex( 0xdba2cc );
+
+  	const hero = document.getElementsByClassName('VPHero VPHomeHero');
 	const threeContainer = document.createElement( 'div' );
-  threeContainer.classList.add('three_js');
+  	threeContainer.classList.add('three_js');
 
 
 	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
 	camera.position.set( - 1.8, 0.6, 2.7 );
 
 	scene = new THREE.Scene();
-  const light = new THREE.AmbientLight( 0x404040 ); // soft white light
-  scene.add( light );
+  	const light = new THREE.AmbientLight( 0xdba2cc ); // soft white light
+  	scene.add( light );
 
 	const loader = new GLTFLoader().setPath( '/' );
 	loader.load( 'bg_model.glb', async function ( gltf ) {
 
 		const model = gltf.scene;
+		model.traverse((o) => {
+			if (o.isMesh) o.material = material;
+		});
+		mixer = new THREE.AnimationMixer( model );
+		const clips = gltf.animations;
+		const clip = THREE.AnimationClip.findByName( clips, 'anim' );
+		const action = mixer.clipAction( clip );
+		console.log(gltf)
+		console.log(clip)
 
 		// wait until the model can be added to the scene without blocking due to shader compilation
 
 		await renderer.compileAsync( model, camera, scene );
 
 		scene.add( model );
+		modelReady = true
 
 
 		render();
         hero[0].appendChild( threeContainer );
-        //animate();
+		action.play();
+        animate();
 			
 	} );
 
@@ -100,6 +119,17 @@ function onWindowResize() {
 function render() {
 
 	renderer.render( scene, camera );
+
+}
+
+function animate() {
+	requestAnimationFrame(animate)
+
+	//controls.update()
+
+	if (mixer && modelReady) mixer.update(clock.getDelta())
+
+	render()
 
 }
 </script>

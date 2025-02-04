@@ -8,6 +8,6 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "three": "^0.173.0"
+    "three": "^0.158.0"
   }
 }
