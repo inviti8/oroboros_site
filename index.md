@@ -14,13 +14,6 @@ hero:
       text: API
       link: /Getting Started/Getting Started
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
 <script setup>
@@ -49,7 +42,7 @@ function init() {
 
 
 	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
-	camera.position.set( - 1.8, 0.6, 2.7 );
+	camera.position.set( 0, 0, 3.3 );
 
 	scene = new THREE.Scene();
   	const light = new THREE.AmbientLight( 0xdba2cc ); // soft white light
@@ -91,13 +84,6 @@ function init() {
 	renderer.toneMappingExposure = 1;
 	threeContainer.appendChild( renderer.domElement );
 
-	const controls = new OrbitControls( camera, renderer.domElement );
-	controls.addEventListener( 'change', render ); // use if there is no animation loop
-	controls.minDistance = 2;
-	controls.maxDistance = 10;
-	controls.target.set( 0, 0, - 0.2 );
-	controls.update();
-
 	window.addEventListener( 'resize', onWindowResize );
 
 }
@@ -114,22 +100,13 @@ function onWindowResize() {
 
 }			
 
-			//
-
 function render() {
-
 	renderer.render( scene, camera );
-
 }
 
 function animate() {
 	requestAnimationFrame(animate)
-
-	//controls.update()
-
 	if (mixer && modelReady) mixer.update(clock.getDelta())
-
 	render()
-
 }
 </script>
