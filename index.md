@@ -21,6 +21,7 @@ import { ref } from 'vue'
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 
 const clock = new THREE.Clock();
 let camera, scene, model, renderer;
@@ -48,37 +49,38 @@ function init() {
   	scene.add(light);
 
   	const loader = new GLTFLoader().setPath('/');
+	
   	loader.load('bg_model.glb', async function(gltf) {
 
-		model = gltf.scene;
-		model.traverse((o) => {
-			if (o.isMesh) o.material = material;
+	model = gltf.scene;
+
+	model.traverse((o) => {
+		if (o.isMesh) o.material = material;
 	});
+
     mixer = new THREE.AnimationMixer(model);
 	const clips = gltf.animations;
     const clip = THREE.AnimationClip.findByName(clips, 'anim');
     const action = mixer.clipAction(clip);
-    console.log(gltf);
-    console.log(clip);
 
-		// wait until the model can be added to the scene without blocking due to shader compilation
+	// wait until the model can be added to the scene without blocking due to shader compilation
 
     await renderer.compileAsync(model, camera, scene);
 
     scene.add(model);
     modelReady = true;
 
-		render();
+	render();
     hero[0].appendChild(threeContainer);
-		action.play();
-        animate();
+	action.play();
+    animate();
 			
   });
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
-	renderer.toneMapping = THREE.ACESFilmicToneMapping;
-	renderer.toneMappingExposure = 1;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1;
   threeContainer.appendChild(renderer.domElement);
 
   window.addEventListener('resize', onWindowResize);
@@ -90,8 +92,8 @@ function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  //renderer.setAnimationLoop(animate);
+  	renderer.setSize(window.innerWidth, window.innerHeight);
+  	//renderer.setAnimationLoop(animate);
 	render();
 
 } 
@@ -109,6 +111,6 @@ function animate() {
 
 document.addEventListener('mousemove', function(event) {
     model.rotation.y += event.movementX * 0.0001;
-    model.rotation.x += event.movementY * 0.0005;
+    model.rotation.x += -event.movementY * 0.0005;
 });
 </script>

@@ -2,12 +2,12 @@
   "hash": "d0667c95",
   "configHash": "670b842b",
   "lockfileHash": "b5b83518",
-  "browserHash": "2987bb37",
+  "browserHash": "c79cfd9d",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "92135b7c",
+      "fileHash": "a080c841",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
@@ -19,34 +19,64 @@
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "e9c06a58",
+      "fileHash": "a887c244",
       "needsInterop": false
     },
     "three": {
       "src": "../../../node_modules/three/build/three.module.js",
       "file": "three.js",
-      "fileHash": "41304ec6",
+      "fileHash": "b49ac310",
       "needsInterop": false
     },
     "three/addons/controls/OrbitControls.js": {
       "src": "../../../node_modules/three/examples/jsm/controls/OrbitControls.js",
       "file": "three_addons_controls_OrbitControls__js.js",
-      "fileHash": "847bdd42",
+      "fileHash": "11c18e6d",
       "needsInterop": false
     },
     "three/addons/loaders/GLTFLoader.js": {
       "src": "../../../node_modules/three/examples/jsm/loaders/GLTFLoader.js",
       "file": "three_addons_loaders_GLTFLoader__js.js",
-      "fileHash": "c12d230a",
+      "fileHash": "5a90e6ba",
+      "needsInterop": false
+    },
+    "three/examples/jsm/postprocessing/UnrealBloomPass": {
+      "src": "../../../node_modules/three/examples/jsm/postprocessing/UnrealBloomPass.js",
+      "file": "three_examples_jsm_postprocessing_UnrealBloomPass.js",
+      "fileHash": "3e71eb17",
+      "needsInterop": false
+    },
+    "three/examples/jsm/postprocessing/RenderPass": {
+      "src": "../../../node_modules/three/examples/jsm/postprocessing/RenderPass.js",
+      "file": "three_examples_jsm_postprocessing_RenderPass.js",
+      "fileHash": "811c7634",
+      "needsInterop": false
+    },
+    "three/examples/jsm/postprocessing/OutputPass": {
+      "src": "../../../node_modules/three/examples/jsm/postprocessing/OutputPass.js",
+      "file": "three_examples_jsm_postprocessing_OutputPass.js",
+      "fileHash": "1bb30492",
+      "needsInterop": false
+    },
+    "three/examples/jsm/postprocessing/EffectComposer": {
+      "src": "../../../node_modules/three/examples/jsm/postprocessing/EffectComposer.js",
+      "file": "three_examples_jsm_postprocessing_EffectComposer.js",
+      "fileHash": "d776684c",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-D2JQ2S7O": {
-      "file": "chunk-D2JQ2S7O.js"
+    "chunk-MVBXDDFD": {
+      "file": "chunk-MVBXDDFD.js"
+    },
+    "chunk-C2VN2QRP": {
+      "file": "chunk-C2VN2QRP.js"
     },
     "chunk-VJWGEPT5": {
       "file": "chunk-VJWGEPT5.js"
+    },
+    "chunk-D2JQ2S7O": {
+      "file": "chunk-D2JQ2S7O.js"
     }
   }
 }
